@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{tikz,tikz-inet,pgf,pgfplots}
+\pgfcreateplotcyclelist{\mylist}{
+	{blue,mark=none,thick}, 
+	{red,mark=none,thick,densely dashed}, 
+	{pink,mark=none,thick},
+	{mark=none,thick,densely dotted}, 
+	{mark=none,thick,dash pattern=on 5pt off 5pt}, 
+	{mark=none,thick,dash pattern=on 5pt off 2pt on 10pt off 5pt},
+}
+\gdef\figwidth{10cm}
+\gdef\figheight{6cm}
+
+\begin{document}
+%\begin{figure}
+%\begin{center}
+%\input{Variation_K.tex}
+%\caption{Cost variation according to number of dischargers}
+%\end{center}
+%\end{figure}
+%
+%\begin{figure}
+%\begin{center}
+%\input{opt_K.tex}
+%\caption{Upper and lower bounds of optimal number of dischargers}
+%\end{center}
+%\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{Eco_theta_Hepsilon002.tex}
+\caption{Saving varies according to $\theta$, with hyperopic discharging rate,  $\epsilon=0.02$}
+\end{center}
+\end{figure}
+
+%\begin{figure}
+%\begin{center}
+%\input{Eco_theta_M.tex}
+%\caption{Saving varies according to $\theta$, with myopic discharging rate}
+%\end{center}
+%\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{Eco_lambda_Hepsilon002.tex}
+\caption{Saving varies according to $\lambda$, with hyperopic discharging rate,  $\epsilon=0.02$}
+\end{center}
+\end{figure}
+
+%\begin{figure}
+%\begin{center}
+%\input{Eco_lambda_M.tex}
+%\caption{Saving varies according to $\lambda$, with myopic discharging rate}
+%\end{center}
+%\end{figure}
+
+
+%Hyperopic schemes work always better than myopic ones, so no need to discuss the myopic discharging power for Scheme 1 and 2.
+%\begin{figure}
+%\begin{center}
+%\input{Scheme1and2_lambda_MandH.tex}
+%\caption{Compare of Myopic and Hyperopic according to $\lambda$}
+%\end{center}
+%\end{figure}
+%
+%\begin{figure}
+%\begin{center}
+%\input{Scheme1and2_theta_MandH.tex}
+%\caption{Compare of Myopic and Hyperopic according to $\theta$}
+%\end{center}
+%\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{Eco_theta_Hepsilon001.tex}
+\caption{Saving varies according to $\theta$, with hyperopic discharging rate,  $\epsilon=0.01$}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\input{Eco_lambda_Hepsilon001.tex}
+\caption{Saving varies according to $\lambda$, with hyperopic discharging rate,  $\epsilon=0.01$}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{Cost_K.tex}
+\caption{Cost with varying number of dischargers}
+\end{center}
+\end{figure}
+
+
+\end{document}

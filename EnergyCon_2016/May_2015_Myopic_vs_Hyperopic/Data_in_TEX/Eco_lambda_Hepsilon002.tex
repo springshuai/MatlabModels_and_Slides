@@ -1,0 +1,21 @@
+% Obtained from Exhaustive_k_lambda_Hyperopic(), run on 26/5/2015 at 14:28:58when $\theta$ = 0.1
+{\footnotesize\begin{tikzpicture}\begin{axis}[legend style={at={(1,1.03)},anchor=south east},width=\figwidth,height=\figheight,cycle list name=\mylist,every axis legend/.append style={nodes={right}},xlabel=Number of EVs coming per hour,ylabel=Saving in \%,legend entries={Saving in Scheme 1,Saving in Scheme 2,Saving in Scheme 2,Saving in Scheme 2 with no unplugging cost}]
+% Saving in Scheme 1
+\addplot coordinates{
+(10,2.5251)(11,2.8571)(12,3.1929)(13,3.532)(14,3.8741)(15,4.219)(16,4.5663)(17,4.9159)(18,5.2699)(19,5.6269)(20,5.9854)(21,6.3454)(22,6.7067)(23,7.0692)(24,7.433)(25,7.798)(26,8.164)(27,8.5311)(28,8.8992)(29,9.2682)(30,9.6383)};
+% Saving in Scheme 2
+\addplot coordinates{
+(10,3.8881)(11,4.3534)(12,4.813)(13,5.291)(14,5.7688)(15,6.2393)(16,6.7169)(17,7.2025)(18,7.68)(19,8.1596)(20,8.6499)(21,9.132)(22,9.6147)(23,10.1079)(24,10.5928)(25,11.0794)(26,11.5741)(27,12.0607)(28,12.5515)(29,13.0468)(30,13.5341)};
+% Saving in Scheme 2 without unplugging cost
+\addplot coordinates{
+(10,4.4018)(11,4.9139)(12,5.4597)(13,5.993)(14,6.5166)(15,7.0711)(16,7.6122)(17,8.1478)(18,8.7065)(19,9.2517)(20,9.799)(21,10.3594)(22,10.9063)(23,11.4651)(24,12.0253)(25,12.5724)(26,13.1423)(27,13.7013)(28,14.2579)(29,14.828)(30,15.3849)};
+% Optimal k in scheme 1
+\addplot coordinates{
+(10,11)(11,12)(12,13)(13,14)(14,15)(15,16)(16,17)(17,18)(18,20)(19,21)(20,22)(21,23)(22,24)(23,25)(24,26)(25,27)(26,28)(27,29)(28,30)(29,31)(30,32)};
+% Optimal k in scheme 2
+\addplot coordinates{
+(10,8)(11,9)(12,10)(13,10)(14,11)(15,12)(16,12)(17,13)(18,14)(19,14)(20,15)(21,16)(22,16)(23,17)(24,18)(25,18)(26,19)(27,20)(28,20)(29,21)(30,22)};
+% Optimal k in scheme 2 without unplugging cost
+\addplot coordinates{
+(10,8)(11,8)(12,9)(13,10)(14,10)(15,11)(16,12)(17,12)(18,13)(19,14)(20,14)(21,15)(22,16)(23,16)(24,17)(25,18)(26,18)(27,19)(28,19)(29,20)(30,21)};
+\end{axis}\end{tikzpicture}}

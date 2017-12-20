@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{tikz,tikz-inet,pgf,pgfplots}
+\pgfcreateplotcyclelist{\mylist}{
+	{blue,mark=none,thick}, 
+	{red,mark=none,thick,densely dashed}, 
+	{mark=none,thick,densely dotted}, 
+	{mark=none,thick,dash pattern=on 2pt off 2pt on 6pt off 2pt}, 
+}
+\gdef\figwidth{10cm}
+\gdef\figheight{6cm}
+
+\begin{document}
+\begin{figure}
+\begin{center}
+\input{results/my_filename.tex}
+\caption{Example}
+\end{center}
+\end{figure}
+
+\end{document}

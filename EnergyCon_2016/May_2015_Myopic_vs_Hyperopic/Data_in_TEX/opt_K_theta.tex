@@ -1,0 +1,12 @@
+%Obtained from funtion Optmize_K with parameters of$\lambda$ goes from 10to30,$\mu=$1,$\theta=$0.2, run on 6/5/2015 at 7:24:1
+{\footnotesize\begin{tikzpicture}\begin{axis}[legend style={at={(0.97,0.03)},anchor=south east},width=\figwidth,height=\figheight,cycle list name=\mylist,every axis legend/.append style={nodes={right}},xlabel=Average surplus energy per EV $1/\theta$ (kWh),ylabel=Number of dischargers,legend entries={Scheme 1, Scheme 2, Free unplugging}]
+% Optimal k in scheme 1
+\addplot +[const plot]coordinates{
+(4,19)(4.1667,19)(4.3478,20)(4.5455,20)(4.7619,20)(5,21)(5.2632,21)(5.5556,21)(5.8824,22)(6.25,22)(6.6667,22)(7.1429,23)(7.6923,23)(8.3333,23)(9.0909,23)(10,24)(11.1111,24)(12.5,24)(14.2857,25)(16.6667,25)(20,25)};
+% Optimal k in scheme 2
+\addplot +[const plot]coordinates{
+(4,12)(4.1667,12)(4.3478,12)(4.5455,12)(4.7619,12)(5,13)(5.2632,13)(5.5556,13)(5.8824,14)(6.25,14)(6.6667,14)(7.1429,14)(7.6923,15)(8.3333,15)(9.0909,16)(10,16)(11.1111,17)(12.5,17)(14.2857,18)(16.6667,18)(20,19)};
+\addplot +[const plot]coordinates{
+(4,10)(4.1667,10)(4.3478,10)(4.5455,10)(4.7619,10)(5,11)(5.2632,11)(5.5556,11)(5.8824,11)(6.25,12)(6.6667,12)(7.1429,12)(7.6923,13)(8.3333,13)(9.0909,14)(10,14)(11.1111,15)(12.5,15)(14.2857,16)(16.6667,17)(20,17)};
+\end{axis}\end{tikzpicture}}
+%$\lambda$ goes from 10to30,$\mu=$1,$\theta=$0.2

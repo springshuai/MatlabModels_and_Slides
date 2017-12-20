@@ -1,0 +1,37 @@
+function [  ] = Draw_rd_ru( )
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+
+t_20_07_2015 = 0.043;
+epsilon = 0;
+rho_u = 0.5-epsilon;
+rho_d = 0.5-epsilon;
+
+gamma_g = 0.5;
+gamma_s = 0.05;
+r_u_min_s=2-rho_u+gamma_s*rho_u^(-0.5)*(1-rho_u)^1.5;
+r_d_min_s=1-(rho_d-gamma_s*sqrt(rho_d-(rho_d^2)));
+
+r_u_min_g=2-rho_u+gamma_g*rho_u^(-0.5)*(1-rho_u)^1.5;
+r_d_min_g=1-(rho_d-gamma_g*sqrt(rho_d-(rho_d^2)));
+
+load ru_rd_20_07_2015
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%-----plot the nodes in Draw_rd_ru.tex---%%%%%
+file_name = 'Draw_rd_ru.tex';
+x_label = '$r_u$';
+y_label = '$r_d$';
+fid = fopen(['/Users/shuaiwenjing/Dropbox/Wenjing/August_ISGT_asia_2015/Graphics/' file_name], 'w');
+fprintf(fid, '%s\n',['{\footnotesize\begin{tikzpicture}\begin{axis}']);
+
+for i=1:1:48
+    fprintf(fid,'%s\n', ['\addplot coordinates{',num2str(ru_rd_20_07_2015(i,1)),',',num2str(ru_rd_20_07_2015(i,2)),'};']);
+end
+
+Para = ['%$t=$',num2str(t_20_07_2015),'$\gamma_g=$',num2str(gamma_g), '$\gamma_s$',num2str(gamma_s),'$r_d^{min}_s=$',num2str(r_d_min_s),'$r_u^{min}_s=$',num2str(r_u_min_s),'$r_d^{min}_g=$',num2str(r_d_min_g),'$r_u^{min}_g=$',num2str(r_u_min_g)];
+
+fprintf(fid, '%s\n', '% $t=$', Para);
+fprintf(fid, '%s\n','\end{axis}\end{tikxpicture}}');
+fclose(fid);
+end

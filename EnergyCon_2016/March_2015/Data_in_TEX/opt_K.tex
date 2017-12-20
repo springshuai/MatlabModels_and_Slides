@@ -1,0 +1,10 @@
+%Obtained from funtion Optmize_K with parameters of$\lambda$ goes from 10to30,$\mu=$1,$\theta=$0.2, run on 6/5/2015 at 7:24:1
+{\footnotesize\begin{tikzpicture}\begin{axis}[legend style={at={(0.5,0.6)},anchor=south east},width=\figwidth,height=\figheight,cycle list name=\mylist,every axis legend/.append style={nodes={right}},xlabel=Number of EVs coming per hour,ylabel=Number of dischargers,legend entries={Upper-bound,Optimum,Lower bound}]
+\addplot coordinates{
+(10,13)(11,14)(12,16)(13,17)(14,18)(15,19)(16,20)(17,22)(18,23)(19,24)(20,26)(21,27)(22,28)(23,29)(24,31)(25,32)(26,33)(27,34)(28,36)(29,37)(30,38)};
+\addplot coordinates{
+(10,13)(11,14)(12,16)(13,17)(14,18)(15,19)(16,20)(17,21)(18,23)(19,24)(20,25)(21,26)(22,27)(23,28)(24,29)(25,30)(26,32)(27,33)(28,34)(29,35)(30,36)};
+\addplot coordinates{
+(10,13)(11,14)(12,16)(13,17)(14,18)(15,19)(16,20)(17,21)(18,22)(19,22)(20,23)(21,24)(22,24)(23,25)(24,26)(25,26)(26,27)(27,27)(28,28)(29,28)(30,29)};
+\end{axis}\end{tikzpicture}}
+\caption{Gap between the upper-bound and lower-bound of k and its real value, when $\mu=$1,$\theta=$0.2}

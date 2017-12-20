@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{tikz,tikz-inet,pgf,pgfplots}
+\pgfcreateplotcyclelist{\mylist}{
+	{blue,mark=none,thick}, 
+	{red,mark=none,thick,densely dashed}, 
+	{mark=none,thick,densely dotted}, 
+	{mark=none,thick,dash pattern=on 5pt off 5pt}, 
+	{mark=none,thick,dash pattern=on 5pt off 2pt on 10pt off 5pt},
+}
+\gdef\figwidth{10cm}
+\gdef\figheight{6cm}
+
+\begin{document}
+\begin{figure}
+\begin{center}
+\input{Variation_K.tex}
+\caption{Cost variation according to number of dischargers}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{opt_K.tex}
+\caption{Upper and lower bounds of optimal number of dischargers}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{Eco_theta.tex}
+\caption{Upper and lower bounds of optimal number of dischargers}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{Eco_lambda.tex}
+\caption{Upper and lower bounds of optimal number of dischargers}
+\end{center}
+\end{figure}
+\end{document}
